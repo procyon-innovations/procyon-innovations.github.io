@@ -22,6 +22,7 @@ body {
 
 .wrapper > header {
   grid-area: header;
+  margin-block-end: 0.67em;
 }
 
 .wrapper > main {
@@ -33,8 +34,19 @@ body {
   grid-area: footer;
 }
 
-h1 {
+h1,
+sub {
   text-align: center;
+}
+
+sub {
+  color: #b08c75;
+  margin: 0 auto;
+  display: block;
+}
+
+#header-title {
+  margin-bottom: 3px;
 }
 
 h1,
