@@ -5,6 +5,12 @@ body {
   font-family: 'IBM Plex Mono', monospace;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+h1 {
+  text-align: center;
 }
 
 h1,
@@ -17,6 +23,12 @@ p {
   color: #b08c75; 
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 500px;
+}
 
 .accent1 {
   color: #aad2b0; 
@@ -26,24 +38,10 @@ p {
   color: #725741; 
 }
 
-.loading:after {
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: bottom;
-  -webkit-animation: ellipsis steps(4, end) 1000ms infinite;
-  animation: ellipsis steps(4, end) 1000ms infinite;
-  content: "\2026";
-  width: 0px;
+.email-link {
+  text-decoration: none;
 }
 
-@keyframes ellipsis {
-  to {
-    width: 40px;
-  }
-}
-
-@-webkit-keyframes ellipsis {
-  to {
-    width: 40px;
-  }
+#contact-email {
+  text-align: right;
 }
