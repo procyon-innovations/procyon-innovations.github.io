@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient(transparent, #e1d6c3);
+  background-color: #e1d6c3;
   color: #725741;
   font-family: "IBM Plex Mono", monospace;
   height: 100vh;
@@ -52,7 +52,7 @@ section {
   flex-direction: column;
   gap: 10px;
   height: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
