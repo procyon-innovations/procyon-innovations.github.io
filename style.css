@@ -1,10 +1,16 @@
 body {
-  background-color: #e1d6c3;
+  background: radial-gradient(transparent, #e1d6c3);
   color: #725741;
-  display: grid;
   font-family: "IBM Plex Mono", monospace;
-  grid-template-rows: auto 1fr auto;
   height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 800px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -28,13 +34,18 @@ section {
   flex-direction: column;
   gap: 10px;
   height: 100%;
+  justify-content: space-between;
   margin: 0 auto;
-  max-width: 500px;
+}
+
+.section-content {
+  max-height: 33vh;
 }
 
 footer {
   text-align: right;
   margin: 0 auto;
+  width: 100%;
 }
 
 .accent1 {
@@ -54,4 +65,5 @@ footer {
   gap: 10px;
   flex-direction: row;
   justify-content: flex-end;
+  padding: 0px 5px 0px;
 }
