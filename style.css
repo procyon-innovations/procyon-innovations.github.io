@@ -1,8 +1,8 @@
 body {
-  background-color: #e1d6c3; 
-  color: #725741; 
+  background-color: #e1d6c3;
+  color: #725741;
   display: grid;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
   padding-left: 25px;
@@ -16,32 +16,42 @@ h1 {
 h1,
 h2,
 h3 {
-  color: #5c8057; 
+  color: #5c8057;
 }
 
 p {
-  color: #b08c75; 
+  color: #b08c75;
 }
 
 section {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  height: 100%;
   margin: 0 auto;
   max-width: 500px;
 }
 
+footer {
+  text-align: right;
+  margin: 0 auto;
+}
+
 .accent1 {
-  color: #aad2b0; 
+  color: #aad2b0;
 }
 
 .accent2 {
-  color: #725741; 
+  color: #725741;
 }
 
-.email-link {
-  text-decoration: none;
+.primary {
+  color: #5c8057;
 }
 
-#contact-email {
-  text-align: right;
+.contact-links {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: flex-end;
 }
